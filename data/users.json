@@ -1,0 +1,9 @@
+[
+  {
+    "id": "admin-1",
+    "username": "admin",
+    "password": "yalcin2026admin",
+    "name": "Yalçın Grup Yönetici",
+    "role": "admin"
+  }
+]

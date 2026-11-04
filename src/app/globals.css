@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+  background-color: #0d0e12;
+  color: #e2e4e9;
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+/* Custom Gold Accent Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #141518;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2b30;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c59a63;
+}
+
+/* WordPress HTML content styles for migrated articles */
+.article-content {
+  line-height: 1.85;
+  font-size: 1.0625rem;
+  color: #d1d5db;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+}
+
+.article-content h2 {
+  font-size: 1.75rem;
+  border-left: 3px solid #c59a63;
+  padding-left: 0.85rem;
+}
+
+.article-content h3 {
+  font-size: 1.35rem;
+  color: #f3f4f6;
+}
+
+.article-content p {
+  margin-bottom: 1.25rem;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.article-content ul {
+  list-style-type: disc;
+}
+
+.article-content ol {
+  list-style-type: decimal;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+
+.article-content a {
+  color: #c59a63;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s;
+}
+
+.article-content a:hover {
+  color: #e8b97d;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+  border: 1px solid #28292e;
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid #28292e;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.article-content th {
+  background-color: #1a1b20;
+  color: #ffffff;
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": 37,
+    "name": "Anahtar Teslim İnşaat",
+    "slug": "anahtar-teslim-insaat",
+    "description": "",
+    "count": 35
+  },
+  {
+    "id": 47,
+    "name": "Banyo Tadilat",
+    "slug": "banyo-tadilat",
+    "description": "",
+    "count": 2
+  },
+  {
+    "id": 43,
+    "name": "Beton",
+    "slug": "beton",
+    "description": "",
+    "count": 1
+  },
+  {
+    "id": 44,
+    "name": "Bina Güçlendirme",
+    "slug": "bina-guclendirme",
+    "description": "",
+    "count": 1
+  },
+  {
+    "id": 34,
+    "name": "Bina Tadilatı",
+    "slug": "bina-tadilati",
+    "description": "",
+    "count": 2
+  },
+  {
+    "id": 39,
+    "name": "Çelik Konstrüksiyon",
+    "slug": "celik-konstruksiyon",
+    "description": "",
+    "count": 2
+  },
+  {
+    "id": 40,
+    "name": "Havuz Yapım",
+    "slug": "havuz-yapim",
+    "description": "",
+    "count": 1
+  },
+  {
+    "id": 33,
+    "name": "İnşaat",
+    "slug": "insaat",
+    "description": "",
+    "count": 14
+  },
+  {
+    "id": 41,
+    "name": "İstinat Duvarı",
+    "slug": "istinat-duvari",
+    "description": "",
+    "count": 4
+  },
+  {
+    "id": 36,
+    "name": "Kaba İnşaat",
+    "slug": "kaba-insaat",
+    "description": "",
+    "count": 8
+  },
+  {
+    "id": 35,
+    "name": "Kat Karşılığı İnşaat",
+    "slug": "kat-karsiligi-insaat",
+    "description": "",
+    "count": 3
+  },
+  {
+    "id": 42,
+    "name": "Maliyet Hesabı",
+    "slug": "maliyet-hesabi",
+    "description": "",
+    "count": 10
+  },
+  {
+    "id": 48,
+    "name": "Mantolama",
+    "slug": "mantolama",
+    "description": "",
+    "count": 1
+  },
+  {
+    "id": 46,
+    "name": "Mutfak Tadilatı",
+    "slug": "mutfak-tadilati",
+    "description": "",
+    "count": 1
+  },
+  {
+    "id": 1,
+    "name": "SİLİVRİDE VİLLA YAPIMI",
+    "slug": "villa",
+    "description": "",
+    "count": 6
+  },
+  {
+    "id": 45,
+    "name": "Subasman",
+    "slug": "subasman",
+    "description": "",
+    "count": 4
+  },
+  {
+    "id": 38,
+    "name": "Tadilat ve Dekorasyon",
+    "slug": "tadilat-ve-dekorasyon",
+    "description": "",
+    "count": 4
+  },
+  {
+    "id": 32,
+    "name": "Yapı Malzemeleri",
+    "slug": "yapi-malzemeleri",
+    "description": "",
+    "count": 1
+  }
+]

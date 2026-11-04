@@ -1,0 +1,188 @@
+[
+  {
+    "title": "Modern Villa Tasarımı",
+    "slug": "modern-villa-tasarimi",
+    "category": "Villa Projesi",
+    "location": "Silivri / Gümüşyaka Sahil",
+    "area": "380 m²",
+    "year": "2025",
+    "scope": "Avan Proje, Statik, 3D Görselleştirme, Anahtar Teslim Taahhüt",
+    "featuredImage": "/uploads/projects/modern-villa.jpg",
+    "gallery": [
+      "/uploads/projects/modern-villa.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2025/01/c4-scaled-e1738276116945.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2025/01/c5-1-scaled.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2025/01/Cati-kati-7-scaled.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2025/01/Banyo-1.jpg"
+    ],
+    "concept": "Gümüşyaka sahil bandına komşu 750 m² arsa üzerinde konumlanan bu modern villa projesinde; iç ve dış mekan sınırlarını kaldıran şeffaf cam cepheler ve doğal tik ahşap kaplamalar ana tasarım dilini oluşturmuştur. L formundaki kütle yerleşimi sayesinde gün boyu doğal ışık alan iç mekanlar, rüzgar korumalı özel bir havuz avlusu meydana getirmektedir.",
+    "engineering": "Bölgenin zemin etüdü doğrultusunda 100 cm radye jeneral temel ve C35/40 sınıfı hazır betonarme taşıyıcı sistem kullanılmıştır. Deniz etkisi ve korozyon riskine karşı epoksi kaplamalı donatılar ile çift kat SBS polimer bitümlü su ve nem yalıtımı uygulanmıştır.",
+    "materials": [
+      "Brüt beton dokulu dış cephe kaplaması ve termal işlem görmüş doğal tik ahşap güneş kırıcılar",
+      "Isı yalıtımlı Schüco alüminyum doğrama ve lamine konfor ısıcam sistemleri",
+      "Akıllı ev otomasyonu (Knox KNX protokolü ile yerden ısıtma, aydınlatma ve iklimlendirme kontrolü)",
+      "Doğal traverten zemin kaplaması ve özel tasarım taş kaplama şömine"
+    ]
+  },
+  {
+    "title": "Modern Lüks Villa Tasarımı",
+    "slug": "luks-villa-tasarimi",
+    "category": "Lüks Villa",
+    "location": "Silivri / Selimpaşa Yamaç",
+    "area": "520 m²",
+    "year": "2025",
+    "scope": "Mimari Konsept Tasarım, İç Mimari & Peyzaj Taahhüdü",
+    "featuredImage": "/uploads/projects/luxury-villa.jpg",
+    "gallery": [
+      "/uploads/projects/luxury-villa.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/09/2026-silivri-mustakil-ev-ve-villa-yapim-maaliyetleri.webp",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/05/villa-insaat-maaliyeti.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2020/05/p4-gallery1.jpg"
+    ],
+    "concept": "Marmara Denizi panoramasına hakim eğimli arazide yükselen 3 katlı lüks villa; konsol kütlelerin yarattığı gölge oyunları ve karanlık bazalt taş dokusuyla heykelsi bir silüet çizmektedir. Sonsuzluk havuzunun su yüzeyi, ufuk çizgisiyle birleşerek oturma teraslarına eşsiz bir dinginlik kazandırmaktadır.",
+    "engineering": "Eğimli parsel stabilitesi için fore kazıklı istinat perdesi ve kademeli radye temel sistemi projelendirilmiştir. Statik hesaplamalarda 2018 Türkiye Bina Deprem Yönetmeliği'nin en üst performans seviyesi (DD-1) hedeflenmiştir.",
+    "materials": [
+      "Ventile cephe sistemli sinterflex porselen ve antrasit bazalt doğal taş kaplama",
+      "Taşma kanallı akrilik cam kenarlı sonsuzluk havuzu (Infinity Pool)",
+      "Güneş enerjisi panelleri ve entegre ısı pompası hibrit enerji altyapısı",
+      "Minimalist çerçevesiz cam korkuluklar ve gizli lineer cephe aydınlatmaları"
+    ]
+  },
+  {
+    "title": "Zarif ve Modern Konut Tasarımı",
+    "slug": "zarif-moder-konut-tasarimi",
+    "category": "Kentsel Dönüşüm / Konut",
+    "location": "Silivri / Alibey Mahallesi",
+    "area": "480 m²",
+    "year": "2025",
+    "scope": "Kentsel Dönüşüm, Yıkım, Ruhsat & Anahtar Teslim İnşaat",
+    "featuredImage": "/uploads/projects/residential-villa.jpg",
+    "gallery": [
+      "/uploads/projects/residential-villa.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/06/betonarme-villa-maliyeti-2026-e1781563264269.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/06/150-metrekare-villa-maliyeti-e1780709280371.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2020/05/p3-gallery1.jpg"
+    ],
+    "concept": "Silivri Çanta bölgesinde yer alan 1.200 m² zeytinlik parseli üzerinde kurgulanan konut, doğa ile iç içe yalın bir yaşam arzusuyla tasarlandı. Konsol brüt beton tavan döşemesi, gölgeli geniş verandalar oluştururken, tüm yaşam alanları gün boyu zeytin ağaçlarına ve peyzaj havuzuna açılmaktadır.",
+    "engineering": "Arazinin eğim durumu ve zemin niteliği gözetilerek kademeli kuyu temel ve C30/37 su geçirimsiz betonarme perde duvarlar uygulanmıştır. Termal köprüleri sıfırlayan dıştan mantolama ve taşyünü yalıtım katmanları ile A sınıfı enerji kimlik belgesi hedeflenmiştir.",
+    "materials": [
+      "Doğal brüt beton yüzeyler ve yerel kayrak taşı duvar kaplamaları",
+      "Linea Rossa ısı yalıtımlı sürme cam cephe sistemleri",
+      "Daikin Altherma havadan suya ısı pompası ve tavandan serinletme kanalları",
+      "Doğal lamine meşe parke ve mikroçimento zemin bitişleri"
+    ]
+  },
+  {
+    "title": "Modern Endüstriyel Fabrika Tasarımı",
+    "slug": "modern-endustriyel-fabrika-tasarimi",
+    "category": "Endüstriyel Yapı",
+    "location": "Silivri / Değirmenköy Organize Sanayi",
+    "area": "2.800 m²",
+    "year": "2024",
+    "scope": "Çelik Konstrüksiyon Statik Proje, İdari Ofis & Fabrika Binası",
+    "featuredImage": "/uploads/projects/industrial-factory.jpg",
+    "gallery": [
+      "/uploads/projects/industrial-factory.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/05/150-metrekare-celik-ev-maliyeti-e1779974373343.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/05/silivri-kentsel-donusum-firmasi-e1779973570731.jpg"
+    ],
+    "concept": "Üretim alanı ile idari yönetimi tek bir estetik çatıda birleştiren modern endüstriyel tesis projesi. Geniş açıklıklı çelik kafes taşıyıcı sistem kesintisiz üretim holü sağlarken; ön cephedeki cam giydirme kütle prestijli bir genel merkez görünümü sunmaktadır.",
+    "engineering": "Ağır sanayi yüklerine uygun helikopter perdahlı endüstriyel zemin betonu ve yüksek mukavemetli S275/S355 çelik konstrüksiyon kolon-kiriş birleşimleri tasarlanmıştır. Tır ve lojistik araç giriş çıkışlarına uygun rampa geometrileri çözülmüştür.",
+    "materials": [
+      "PIR dolgulu yangına dayanıklı poliüretan sandviç çatı ve cephe panelleri",
+      "Yüksek güneş kontrol performanslı Guardian cam giydirme cephe",
+      "Otomatik seksiyonel yükleme körükleri ve endüstriyel kapılar",
+      "Yağmur suyu hasadı ve çatıda GES (Güneş Enerji Santrali) altyapısı"
+    ]
+  },
+  {
+    "title": "3 Katlı Villa Tasarımı",
+    "slug": "3-katli-villa-tasarimi",
+    "category": "Villa Projesi",
+    "location": "Silivri / Ortaköy",
+    "area": "420 m²",
+    "year": "2025",
+    "scope": "Mimari Proje, Statik Ruhsat, Radye Temel & İnşaat",
+    "featuredImage": "/uploads/projects/three-story-villa.jpg",
+    "gallery": [
+      "/uploads/projects/three-story-villa.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/06/silivri-radye-temel-e1782256185391.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/06/silivri-bahce-duvari-e1782079621558.jpg"
+    ],
+    "concept": "Marmara Denizi panoramasına hakim Silivri falez yamacında yer alan 3 katlı bu lüks rezidans, teraslı kademeli yapısıyla arazi topoğrafyasına kusursuzca entegre olur. Zemin katta geniş yaşam salonu ve sonsuzluk havuzu yer alırken, üst katlar bağımsız ebeveyn ve konuk süitleri olarak organize edilmiştir.",
+    "engineering": "Eğimli topoğrafyada zemin stabilitesini sağlamak adına 24 metre derinliğinde 18 adet fore kazık ve ankrajlı mini kazık sistemiyle diyafram perde oluşturulmuştur. Taşıyıcı sistemde yüksek dayanımlı C40/50 betonarme kolon ve kirişler ile 4.5 metrelik konsol teraslar çözümlenmiştir.",
+    "materials": [
+      "Afyon beyazı patlatma ve honlu doğal traverten cephe panelleri",
+      "Gömme gizli raylı Reynaers alüminyum panoramik camlama",
+      "Güneş enerjili fotovoltaik panel sistemi (15 kW çatı tipi on-grid santral)",
+      "Gömme açık ateş çukuru ve ısıtmalı sonsuzluk havuz otomasyonu"
+    ]
+  },
+  {
+    "title": "Konferans Salonu Projesi",
+    "slug": "konferans-salonu-projesi",
+    "category": "Kültür & Kurumsal",
+    "location": "Silivri / Merkez",
+    "area": "450 m²",
+    "year": "2024",
+    "scope": "İç Mimari Akustik Tasarım, Aydınlatma & Uygulama",
+    "featuredImage": "/uploads/projects/auditorium-interior.jpg",
+    "gallery": [
+      "/uploads/projects/auditorium-interior.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2020/05/p4-gallery2.jpg"
+    ],
+    "concept": "300 kişilik oturma kapasitesine sahip bu oditoryum projesinde, parametrik dalgalı ahşap tavan ve duvar panelleri ile hem kusursuz bir salon akustiği hem de göz alıcı bir mimari atmosfer hedeflenmiştir. Sahne odaklı görüş açıları ergonomik kademeli tribün düzeniyle çözülmüştür.",
+    "engineering": "3D akustik simülasyon (CATT-Acoustic) yazılımlarıyla yankılanma süresi (RT60 = 1.1s) optimize edilmiştir. Yangın yönetmeliğine uygun A2 sınıfı alev iletmez malzemeler kullanılmıştır.",
+    "materials": [
+      "Delikli ve kanallı doğal meşe kaplama akustik ahşap paneller",
+      "Kademeli basamak altına gizlenmiş LED yönlendirme aydınlatması",
+      "Yangına dayanıklı kumaş kaplı ergonomik sinema/oditoryum koltukları",
+      "Profesyonel line-array ses ve lazer projeksiyon sahne sistemleri"
+    ]
+  },
+  {
+    "title": "Fabrika Projesi",
+    "slug": "fabrika-projesi",
+    "category": "Endüstriyel Yapı",
+    "location": "Silivri / Kınalı Sanayi Bölgesi",
+    "area": "1.850 m²",
+    "year": "2024",
+    "scope": "Mimari Projelendirme, Ruhsatlandırma & Zemin Güçlendirme",
+    "featuredImage": "/uploads/projects/industrial-plant.jpg",
+    "gallery": [
+      "/uploads/projects/industrial-plant.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/05/120-metrekare-kaba-insaat-e1779707014782.jpg"
+    ],
+    "concept": "Silivri Ortaköy Organize Sanayi Bölgesinde yer alan bu üretim ve genel merkez tesisi; kurumsal kimliği temsil eden şeffaf yönetim bloğu ile fonksiyonel ağır sanayi üretim hangarını kusursuz bir mimari bütünlükle bir araya getirmektedir.",
+    "engineering": "36 metre net aks açıklığına sahip ön germeli prekast betonarme kolon ve makas kirişler kullanılmıştır. 25 tonluk tavan vinci dinamik yükleri modellenmiş, zemin plağında ağır tonajlı forklift trafiğine dayanıklı çelik tel donatılı endüstriyel vakumlu beton ve yüzey sertleştirici uygulanmıştır.",
+    "materials": [
+      "PIR dolgulu yangına dayanıklı poliüretan sandviç cephe ve çatı panelleri (FM Global onaylı)",
+      "Yönetim bloğu için Guardian Sunguard reflekte yapısal silikon giydirme cephe",
+      "Epoksi reçine zemin kaplamaları ve antistatik endüstriyel yüzeyler",
+      "Otomatik seksiyonel yükleme körükleri ve hidrolik rampa istasyonları"
+    ]
+  },
+  {
+    "title": "Sınıf Projesi & Eğitim Binası",
+    "slug": "sinif-projesi",
+    "category": "Eğitim Yapısı",
+    "location": "Silivri / Alibey",
+    "area": "650 m²",
+    "year": "2024",
+    "scope": "İç Mekan Mimari Yenileme & Akustik İyileştirme",
+    "featuredImage": "/uploads/projects/education-campus.jpg",
+    "gallery": [
+      "/uploads/projects/education-campus.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2020/05/p3-gallery4.jpg",
+      "https://www.yalcingrupmimarlik.com/wp-content/uploads/2020/05/p3-gallery5.jpg"
+    ],
+    "concept": "Öğrenme mekanlarını geleneksel hiyerarşik sınıf düzeninden çıkarıp çok yönlü, interaktif ve esnek amfi atölyelerine dönüştüren çağdaş eğitim kampüsü projesi. Doğal çatı fenerlikleri (skylight) ile iç avluya gün boyu süzülen doğal ışık, akustik ahşap çıtalarla birleşerek yaratıcı bir çalışma atmosferi sunar.",
+    "engineering": "Geniş açıklıklı kaset döşeme sistemiyle kolonsuz ortak amfi alanı elde edilmiştir. Akustik simülasyon yazılımları ile yankılanma süresi (RT60) 0.6 saniye seviyesinde tutulmuş, mekanik havalandırma sisteminde ısı geri kazanımlı taze hava santralleri entegre edilmiştir.",
+    "materials": [
+      "Doğal meşe kaplama akustik duvar ve tavan baffle çıta panelleri",
+      "Akustik keçe kaplamalı modüler oturma basamakları ve yerleşik şarj üniteleri",
+      "Darbelere ve aşınmaya dayanıklı doğal kauçuk (Nora) zemin kaplaması",
+      "DALI kontrollü insan odaklı sirkadiyen aydınlatma armatürleri"
+    ]
+  }
+]

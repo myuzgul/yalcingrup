@@ -1,0 +1,120 @@
+{
+  "header": [
+    {
+      "label": "Anasayfa",
+      "url": "/"
+    },
+    {
+      "label": "Kurumsal",
+      "url": "/hakkimizda/",
+      "children": [
+        {
+          "label": "Hakkımızda",
+          "url": "/hakkimizda/"
+        },
+        {
+          "label": "Silivri İnşaat Firması",
+          "url": "/silivri-insaat-firmasi/"
+        }
+      ]
+    },
+    {
+      "label": "Hizmetlerimiz",
+      "url": "#",
+      "children": [
+        {
+          "label": "Mimari Projelendirme & Tasarım",
+          "url": "/mimari-projelendirme-ve-tasarim/"
+        },
+        {
+          "label": "İnşaat Uygulamaları & Taahhüt",
+          "url": "/insaat-uygulamalari-hizmetleri/"
+        },
+        {
+          "label": "İç Mekan & Dekorasyon",
+          "url": "/ic-mekan-dekorasyon/"
+        },
+        {
+          "label": "Endüstriyel & Ticari Yapılar",
+          "url": "/endustriyel-ticari-yapilar/"
+        },
+        {
+          "label": "Danışmanlık & Proje Yönetimi",
+          "url": "/danismanlik-proje-yonetimi/"
+        },
+        {
+          "label": "Özel Projeler & Konsept Tasarım",
+          "url": "/ozel-projeler-konsept-tasarimlar/"
+        },
+        {
+          "label": "Prefabrik & Modüler Yapılar",
+          "url": "/prefabrik-moduler-yapilar/"
+        }
+      ]
+    },
+    {
+      "label": "Projelerimiz",
+      "url": "/projeler/"
+    },
+    {
+      "label": "Prefabrik Ev Yapımı",
+      "url": "/prefabrik-ev-yapimi/"
+    },
+    {
+      "label": "Blog & Rehberler",
+      "url": "/blog/"
+    },
+    {
+      "label": "İletişim",
+      "url": "/iletisim/"
+    }
+  ],
+  "footerQuickLinks": [
+    {
+      "label": "Anasayfa",
+      "url": "/"
+    },
+    {
+      "label": "Hakkımızda",
+      "url": "/hakkimizda/"
+    },
+    {
+      "label": "Projeler",
+      "url": "/projeler/"
+    },
+    {
+      "label": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "label": "İletişim",
+      "url": "/iletisim/"
+    }
+  ],
+  "footerServices": [
+    {
+      "label": "Villa & Müstakil Ev Yapımı",
+      "url": "/2026-silivri-mustakil-ev-ve-villa-yapim-maliyetleri-kalem-kalem-rehber/"
+    },
+    {
+      "label": "Silivri Kentsel Dönüşüm",
+      "url": "/silivri-kentsel-donusum-firmasi/"
+    },
+    {
+      "label": "Mimari Projelendirme",
+      "url": "/mimari-projelendirme-ve-tasarim/"
+    },
+    {
+      "label": "Anahtar Teslim İnşaat",
+      "url": "/insaat-uygulamalari-hizmetleri/"
+    },
+    {
+      "label": "Prefabrik Ev Yapımı & Modelleri",
+      "url": "/prefabrik-ev-yapimi/"
+    },
+    {
+      "label": "İç Mekan & Dekorasyon",
+      "url": "/ic-mekan-dekorasyon/"
+    }
+  ]
+}
