@@ -1,6 +1,8 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { getPrefabrikHouses, getSettings } from '@/lib/db';
+import { SILIVRI_NEIGHBORHOODS } from '@/lib/silivri-neighborhoods';
 import PrefabrikCatalog from '@/components/PrefabrikCatalog';
 import { 
   Building2, 
@@ -12,12 +14,13 @@ import {
   ArrowUpRight, 
   Sparkles,
   CheckCircle2,
-  PhoneCall
+  PhoneCall,
+  MapPin
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Prefabrik Ev Yapımı & Modelleri | Yalçın Grup Mimarlık & Prefabrik Evim Ortaklığı',
-  description: 'Silivri ve Marmara Bölgesi için tek katlı, dubleks prefabrik evler ve hafif çelik konutlar. Fabrika üretimi, temel betonu, ruhsat ve anahtar teslim montaj Yalçın Grup Mimarlık güvencesiyle.',
+  title: 'Silivri Prefabrik Ev Yapımı, Modelleri ve Fiyatları (184 Model)',
+  description: 'Silivri ve tüm 35 mahallesinde tek katlı, dubleks prefabrik evler ve hafif çelik konutlar. 184 model, güncel fabrika satış fiyatları, ruhsat, zemin betonu ve anahtar teslim montaj.',
   alternates: {
     canonical: 'https://www.yalcingrupmimarlik.com/prefabrik-ev-yapimi/',
   },
@@ -226,6 +229,40 @@ export default function PrefabrikListingPage() {
           {/* Interactive Catalog Component */}
           <PrefabrikCatalog houses={houses} phoneRaw={phoneRaw} />
         </div>
+
+        {/* Silivri & 35 Mahallede Prefabrik Ev Hizmet Bölgeleri (Internal Linking SEO) */}
+        <section className="p-8 sm:p-10 rounded-3xl bg-[#111216] border border-white/[0.08] space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-white/[0.08] pb-5">
+            <div>
+              <span className="text-xs font-mono text-[#c5a059] tracking-[0.25em] uppercase block mb-1">
+                [ SİLİVRİ TÜM MAHALLELERDE ANAHTAR TESLİM KURULUM ]
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-light text-white font-display">
+                Silivri Mahallelerine Göre Prefabrik Ev Yapımı
+              </h2>
+            </div>
+            <Link
+              href="/silivri-prefabrik-ev-yapimi/"
+              className="text-xs font-mono uppercase tracking-widest text-[#c5a059] hover:text-white flex items-center gap-1.5"
+            >
+              <span>Silivri Bölge Rehberi</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {SILIVRI_NEIGHBORHOODS.map((n) => (
+              <Link
+                key={n.slug}
+                href={`/silivri-prefabrik-ev-yapimi/${n.slug}/`}
+                className="px-3.5 py-2 rounded-lg bg-[#161820] border border-white/[0.08] hover:border-[#c5a059]/60 text-xs font-mono text-gray-300 hover:text-[#c5a059] transition-colors flex items-center gap-1.5"
+              >
+                <MapPin className="w-3 h-3 text-[#c5a059]" />
+                <span>Silivri {n.name} Prefabrik Ev</span>
+              </Link>
+            ))}
+          </div>
+        </section>
 
       </div>
     </div>

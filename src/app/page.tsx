@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { 
   ArrowRight, 
@@ -9,10 +10,40 @@ import {
   ShieldCheck,
   Wrench,
   Home,
-  Maximize2
+  Maximize2,
+  CheckCircle2,
+  HelpCircle
 } from 'lucide-react';
 import { getPosts, getProjects, getSettings, getPrefabrikHouses } from '@/lib/db';
+import { SILIVRI_NEIGHBORHOODS } from '@/lib/silivri-neighborhoods';
 import CostCalculator from '@/components/CostCalculator';
+
+export const metadata: Metadata = {
+  title: 'Silivri İnşaat ve Mimarlık Firması | Villa & Prefabrik Ev Yapımı – Yalçın Grup Mimarlık',
+  description: 'Silivri inşaat firması ve Silivri mimarlık ofisi Yalçın Grup Mimarlık. Silivri ve tüm 35 mahallesinde anahtar teslim müstakil villa, kentsel dönüşüm, mimari proje, ruhsat ve prefabrik ev yapımı.',
+  alternates: {
+    canonical: 'https://www.yalcingrupmimarlik.com/',
+  },
+};
+
+const HOME_FAQS = [
+  {
+    q: 'Yalçın Grup Mimarlık Silivri’de hangi inşaat ve mimarlık hizmetlerini veriyor?',
+    a: 'Silivri merkez ofisimizden anahtar teslim müstakil villa inşaatı, Silivri kentsel dönüşüm ve kat karşılığı inşaat, mimari ve statik proje çizimi, yapı ruhsatı takibi, radye temel ve Silivri’nin tüm 35 mahallesinde anahtar teslim prefabrik ev yapımı hizmetleri sunuyoruz.'
+  },
+  {
+    q: 'Silivri’de arsama prefabrik ev veya müstakil villa yaptırmak için ilk adım nedir?',
+    a: 'Öncelikle Silivri Belediyesi imar durumu ve zemin etüdü kontrolünü ücretsiz ön keşif kapsamında inceliyoruz. Ardından arsanızın emsal değerine göre mimari proje veya 184 hazır prefabrik/çelik ev modelimizden en uygun olanını seçip anahtar teslim maliyet tablosu çıkarıyoruz.'
+  },
+  {
+    q: 'Silivri ve tüm mahallelerinde anahtar teslim prefabrik ev yapıyor musunuz?',
+    a: 'Evet. Selimpaşa, Gümüşyaka, Çanta, Değirmenköy, Kavaklı, Ortaköy, Fener, Gazitepe, Semizkumlar, Alibey ve diğer tüm 35 Silivri mahallesinde fabrika kurulumuna ek olarak ruhsat, zemin betonu, şap, parke, fayans, mutfak dolabı, vitrifiye, nakliye ve JCB vinç işlerini anahtar teslim yapıyoruz.'
+  },
+  {
+    q: 'Silivri inşaat maliyetleri nasıl hesaplanıyor?',
+    a: 'İnşaat maliyetleri yapının toplam metrekaresine, taşıyıcı sistemine (betonarme, hafif çelik veya prefabrik), zemin etüdüne ve seçilen malzeme kalitesine göre belirlenir. Anasayfamızdaki 2026 Silivri İnşaat Maliyet Hesaplayıcı ile anında tahmini bütçe görebilir veya ücretsiz keşif talep edebilirsiniz.'
+  }
+];
 
 export default function HomePage() {
   const settings = getSettings();
@@ -92,12 +123,12 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight text-white leading-[1.1] font-display">
-                Statik Güç, <br />
-                <span className="font-semibold text-white">Zamansız Mimari.</span>
+                Silivri İnşaat & Mimarlık: <br />
+                <span className="font-semibold text-white">Statik Güç, Zamansız Mimari.</span>
               </h1>
 
               <p className="text-base sm:text-lg text-gray-300 font-light max-w-xl leading-relaxed">
-                Yalçın Grup Mimarlık; Silivri ve Marmara bölgesinde modern müstakil villalar, depreme dayanıklı kentsel dönüşüm projeleri ve endüstriyel tesisler inşa eden tam kapsamlı mimarlık ve taahhüt ofisidir.
+                <strong>Yalçın Grup Mimarlık</strong>; Silivri ve tüm 35 mahallesinde anahtar teslim müstakil villalar, <strong>Silivri prefabrik ev yapımı</strong>, depreme dayanıklı kentsel dönüşüm ve endüstriyel tesisler inşa eden tam kapsamlı <strong>Silivri mimarlık ve inşaat firmasıdır</strong>.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
@@ -492,6 +523,82 @@ export default function HomePage() {
             ))}
           </div>
 
+        </div>
+      </section>
+
+      {/* 6B. SİLİVRİ & 35 MAHALLE HİZMET AĞI (LOKAL SEO) */}
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 space-y-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/[0.08] pb-8">
+          <div className="space-y-2">
+            <span className="text-xs font-mono text-[#c5a059] tracking-[0.25em] uppercase block">
+              [ SİLİVRİ VE TÜM 35 MAHALLESİNDE HİZMET AĞI ]
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-light text-white tracking-tight font-display">
+              Silivri Prefabrik Ev, İnşaat <br />
+              <span className="font-semibold text-white">ve Mimarlık Bölgelerimiz</span>
+            </h2>
+          </div>
+          <Link
+            href="/silivri-prefabrik-ev-yapimi/"
+            className="text-xs font-mono uppercase tracking-widest text-[#c5a059] hover:text-white transition-colors flex items-center gap-2"
+          >
+            <span>Tüm Silivri Mahalle Rehberi</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
+        <div className="flex flex-wrap gap-2.5">
+          {SILIVRI_NEIGHBORHOODS.map((n) => (
+            <Link
+              key={n.slug}
+              href={`/silivri-prefabrik-ev-yapimi/${n.slug}/`}
+              className="px-3.5 py-2 rounded-lg bg-[#111216] border border-white/[0.08] hover:border-[#c5a059]/60 text-xs font-mono text-gray-300 hover:text-[#c5a059] transition-all flex items-center gap-1.5"
+            >
+              <MapPin className="w-3 h-3 text-[#c5a059]" />
+              <span>{n.name} Prefabrik Ev</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* 6C. SIKÇA SORULAN SORULAR + FAQPage JSON-LD */}
+      <section className="max-w-7xl mx-auto px-6 sm:px-8 space-y-10">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: HOME_FAQS.map((item) => ({
+                '@type': 'Question',
+                name: item.q,
+                acceptedAnswer: { '@type': 'Answer', text: item.a }
+              }))
+            })
+          }}
+        />
+        <div className="space-y-2 border-b border-white/[0.08] pb-6">
+          <span className="text-xs font-mono text-[#c5a059] tracking-[0.25em] uppercase flex items-center gap-2">
+            <HelpCircle className="w-4 h-4" />
+            <span>SIKÇA SORULAN SORULAR</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-light text-white tracking-tight font-display">
+            Silivri İnşaat, Mimarlık ve Prefabrik Ev Hakkında
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {HOME_FAQS.map((faq, idx) => (
+            <div key={idx} className="p-6 rounded-2xl bg-[#111216] border border-white/[0.08] space-y-3">
+              <h3 className="text-base font-medium text-white flex items-start gap-2.5">
+                <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0 mt-1" />
+                <span>{faq.q}</span>
+              </h3>
+              <p className="text-sm text-gray-400 font-light leading-relaxed pl-6">
+                {faq.a}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 

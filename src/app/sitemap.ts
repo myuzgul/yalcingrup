@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getPosts, getPages, getProjects, getCategories, getPrefabrikHouses } from '@/lib/db';
+import { SILIVRI_NEIGHBORHOODS } from '@/lib/silivri-neighborhoods';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.yalcingrupmimarlik.com';
@@ -8,6 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const projects = getProjects();
   const categories = getCategories();
   const prefabrikHouses = getPrefabrikHouses();
+
+  const silivriNeighborhoodUrls = SILIVRI_NEIGHBORHOODS.map((n) => ({
+    url: `${baseUrl}/silivri-prefabrik-ev-yapimi/${n.slug}/`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
 
   const postUrls = posts.map(p => ({
     url: `${baseUrl}/${p.slug}/`,
@@ -70,11 +78,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/silivri-prefabrik-ev-yapimi/`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/iletisim/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    ...silivriNeighborhoodUrls,
     ...pageUrls,
     ...postUrls,
     ...projectUrls,

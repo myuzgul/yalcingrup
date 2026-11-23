@@ -37,13 +37,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!house) return { title: 'Model Bulunamadı' };
 
   return {
-    title: `[${house.sku}] ${house.name} - ${house.priceFormatted || 'Fiyat Teklifi'} | Yalçın Grup Mimarlık`,
-    description: `${house.sku} kodlu ${house.name} (${house.area ? house.area + ' m² ' : ''}${house.rooms}). Fabrika satış fiyatı: ${house.priceFormatted || 'Teklif alınız'}. Ruhsat, zemin betonu ve montaj detayları.`,
+    title: `[${house.sku}] ${house.name} - ${house.priceFormatted || 'Fiyat Teklifi'} | Silivri Prefabrik Ev`,
+    description: `${house.sku} kodlu ${house.name} (${house.area ? house.area + ' m² ' : ''}${house.rooms}). Fabrika satış fiyatı: ${house.priceFormatted || 'Teklif alınız'}. Silivri ve tüm mahallelerinde ruhsat, zemin betonu ve anahtar teslim montaj.`,
     alternates: {
       canonical: `https://www.yalcingrupmimarlik.com/prefabrik-ev-yapimi/${house.slug}/`,
     },
     openGraph: {
-      title: `[${house.sku}] ${house.name} | Prefabrik Evim & Yalçın Grup`,
+      title: `[${house.sku}] ${house.name} | Silivri Prefabrik Ev Yapımı`,
       description: `${house.sku} kodlu model: ${house.priceFormatted || 'Fiyat Teklifi Alınız'}. Fiyata dahil ve dahil olmayan tüm kalemler, kat planı ve teknik şartname.`,
       url: `https://www.yalcingrupmimarlik.com/prefabrik-ev-yapimi/${house.slug}/`,
       images: house.featuredImage ? [{ url: house.featuredImage }] : undefined,
@@ -69,8 +69,46 @@ export default function PrefabrikDetailPage({ params }: Props) {
     `Merhaba Yalçın Grup Mimarlık, [Model Kodu: ${house.sku}] "${house.name}" (${house.area ? house.area + ' m² ' : ''}${house.rooms} - Liste Fiyatı: ${house.priceFormatted}) hakkında fabrika teslimi ve Silivri arsamıza anahtar teslim (ruhsat + zemin betonu + ince işçilik) fiyat teklifi almak istiyoruz.`
   );
 
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `${house.name} (${house.sku})`,
+    sku: house.sku,
+    image: house.gallery?.length ? house.gallery : (house.featuredImage ? [house.featuredImage] : []),
+    description: `${house.sku} kodlu ${house.name}. Silivri ve tüm mahallelerinde anahtar teslim prefabrik ev yapımı.`,
+    brand: {
+      '@type': 'Brand',
+      name: 'Yalçın Grup Mimarlık & Prefabrik Evim'
+    },
+    ...(house.price ? {
+      offers: {
+        '@type': 'Offer',
+        url: `https://www.yalcingrupmimarlik.com/prefabrik-ev-yapimi/${house.slug}/`,
+        priceCurrency: 'TRY',
+        price: house.price,
+        availability: 'https://schema.org/InStock',
+        seller: {
+          '@type': 'Organization',
+          name: 'Yalçın Grup Mimarlık'
+        }
+      }
+    } : {})
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: 'https://www.yalcingrupmimarlik.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Prefabrik Ev Yapımı', item: 'https://www.yalcingrupmimarlik.com/prefabrik-ev-yapimi/' },
+      { '@type': 'ListItem', position: 3, name: `${house.name} (${house.sku})`, item: `https://www.yalcingrupmimarlik.com/prefabrik-ev-yapimi/${house.slug}/` }
+    ]
+  };
+
   return (
     <article className="py-12 bg-[#090a0c] text-[#eae7e1] min-h-screen space-y-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="max-w-7xl mx-auto px-6 sm:px-8 space-y-12">
         
         {/* Breadcrumb */}

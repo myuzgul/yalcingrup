@@ -49,6 +49,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const cleanExcerpt = (item as any).excerpt ? (item as any).excerpt.replace(/<[^>]+>/g, '').trim().substring(0, 160) : 'Silivri mimari projelendirme, kentsel dönüşüm ve inşaat hizmetleri.';
+  const absoluteImg = item.featuredImage
+    ? (item.featuredImage.startsWith('http') ? item.featuredImage : `https://www.yalcingrupmimarlik.com${item.featuredImage}`)
+    : 'https://www.yalcingrupmimarlik.com/uploads/hero-silivri-villa.jpg';
 
   return {
     title: item.title,
@@ -61,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: cleanExcerpt,
       url: `https://www.yalcingrupmimarlik.com/${slug}/`,
       type: post ? 'article' : 'website',
-      images: item.featuredImage ? [{ url: item.featuredImage }] : undefined,
+      images: [{ url: absoluteImg }],
     }
   };
 }
@@ -81,15 +84,22 @@ export default function DynamicSlugPage({ params }: Props) {
     const allPosts = getPosts();
     const relatedPosts = allPosts.filter(p => p.slug !== post.slug).slice(0, 3);
     const readingTime = Math.max(3, Math.ceil(post.content.split(/\s+/).length / 180));
+    const absolutePostImg = post.featuredImage
+      ? (post.featuredImage.startsWith('http') ? post.featuredImage : `https://www.yalcingrupmimarlik.com${post.featuredImage}`)
+      : 'https://www.yalcingrupmimarlik.com/uploads/hero-silivri-villa.jpg';
 
     // Article Structured Data
     const articleSchema = {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: post.title,
-      image: post.featuredImage || 'https://www.yalcingrupmimarlik.com/wp-content/uploads/2026/09/2026-silivri-mustakil-ev-ve-villa-yapim-maaliyetleri.webp',
+      image: absolutePostImg,
       datePublished: post.date,
       dateModified: post.modified || post.date,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `https://www.yalcingrupmimarlik.com/${post.slug}/`
+      },
       author: {
         '@type': 'Organization',
         name: 'Yalçın Grup Mimarlık',
@@ -100,10 +110,20 @@ export default function DynamicSlugPage({ params }: Props) {
         name: 'Yalçın Grup Mimarlık',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://www.yalcingrupmimarlik.com/wp-content/uploads/2020/07/favicon.png'
+          url: 'https://www.yalcingrupmimarlik.com/logo.png'
         }
       },
       description: post.excerpt ? post.excerpt.replace(/<[^>]+>/g, '').trim().substring(0, 160) : post.title
+    };
+
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Anasayfa', item: 'https://www.yalcingrupmimarlik.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.yalcingrupmimarlik.com/blog/' },
+        { '@type': 'ListItem', position: 3, name: post.title, item: `https://www.yalcingrupmimarlik.com/${post.slug}/` }
+      ]
     };
 
     return (
@@ -111,6 +131,10 @@ export default function DynamicSlugPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

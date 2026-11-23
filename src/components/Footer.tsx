@@ -91,11 +91,12 @@ export default function Footer() {
               HİZMETLERİMİZ
             </span>
             <ul className="space-y-2">
-              <li><Link href="/mimari-projelendirme-ve-tasarim/" className="hover:text-white transition-colors">Mimari Projelendirme</Link></li>
-              <li><Link href="/silivri-kentsel-donusum-firmasi/" className="hover:text-white transition-colors">Kentsel Dönüşüm</Link></li>
-              <li><Link href="/insaat-uygulamalari-hizmetleri/" className="hover:text-white transition-colors">İnşaat Taahhüt</Link></li>
-              <li><Link href="/endustriyel-ticari-yapilar/" className="hover:text-white transition-colors">Endüstriyel Yapılar</Link></li>
-              <li><Link href="/ic-mekan-dekorasyon/" className="hover:text-white transition-colors">İç Mekan Tasarım</Link></li>
+              <li><Link href="/silivri-insaat-firmasi/" className="hover:text-white transition-colors">Silivri İnşaat Firması</Link></li>
+              <li><Link href="/mimari-projelendirme-ve-tasarim/" className="hover:text-white transition-colors">Silivri Mimarlık & Projelendirme</Link></li>
+              <li><Link href="/silivri-prefabrik-ev-yapimi/" className="hover:text-white transition-colors">Silivri Prefabrik Ev Yapımı</Link></li>
+              <li><Link href="/silivri-kentsel-donusum-firmasi/" className="hover:text-white transition-colors">Silivri Kentsel Dönüşüm</Link></li>
+              <li><Link href="/insaat-uygulamalari-hizmetleri/" className="hover:text-white transition-colors">Anahtar Teslim İnşaat Taahhüt</Link></li>
+              <li><Link href="/endustriyel-ticari-yapilar/" className="hover:text-white transition-colors">Endüstriyel & Çelik Yapılar</Link></li>
             </ul>
           </div>
 
@@ -123,6 +124,23 @@ export default function Footer() {
             </ul>
           </div>
 
+        </div>
+
+        {/* Local Silivri Service Areas SEO Strip */}
+        <div className="py-5 border-b border-white/[0.06] flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-mono text-gray-500">
+          <span className="text-[#c5a059] uppercase tracking-wider">Silivri Prefabrik & İnşaat Bölgeleri:</span>
+          <Link href="/silivri-prefabrik-ev-yapimi/selimpasa/" className="hover:text-white transition-colors">Selimpaşa</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/gumusyaka/" className="hover:text-white transition-colors">Gümüşyaka</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/canta/" className="hover:text-white transition-colors">Çanta</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/degirmenkoy/" className="hover:text-white transition-colors">Değirmenköy</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/kavakli/" className="hover:text-white transition-colors">Kavaklı</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/ortakoy/" className="hover:text-white transition-colors">Ortaköy</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/semizkumlar/" className="hover:text-white transition-colors">Semizkumlar</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/fener/" className="hover:text-white transition-colors">Fenerköy</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/gazitepe/" className="hover:text-white transition-colors">Gazitepe</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/buyuk-cavuslu/" className="hover:text-white transition-colors">Büyük Çavuşlu</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/alibey/" className="hover:text-white transition-colors">Alibey</Link>
+          <Link href="/silivri-prefabrik-ev-yapimi/" className="text-[#c5a059] hover:text-white transition-colors">Tüm 35 Mahalle →</Link>
         </div>
 
         {/* Bottom Bar */}
